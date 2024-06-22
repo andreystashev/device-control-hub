@@ -1,0 +1,40 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pics/BIGmidle.svg</file>
+        <file>pics/cam.svg</file>
+        <file>pics/down.svg</file>
+        <file>pics/leftdown.svg</file>
+        <file>pics/leftdownlight.svg</file>
+        <file>pics/lefttop.svg</file>
+        <file>pics/lefttoplight.svg</file>
+        <file>pics/midle.svg</file>
+        <file>pics/midlefull.svg</file>
+        <file>pics/right.svg</file>
+        <file>pics/rightdown.svg</file>
+        <file>pics/rightdownlight.svg</file>
+        <file>pics/righttop.svg</file>
+        <file>pics/righttoplight.svg</file>
+        <file>pics/pointBlack.svg</file>
+        <file>pics/pointRectangle.svg</file>
+        <file>pics/pointRed.svg</file>
+        <file>pics/pointCircle.svg</file>
+        <file>pics/lineHide.svg</file>
+        <file>pics/crossSmaller.svg</file>
+        <file>pics/fullscreen.svg</file>
+        <file>pics/screen.svg</file>
+        <file>pics/fullscreen1.svg</file>
+        <file>pics/crossWhite.svg</file>
+        <file>pics/graphVar.svg</file>
+        <file>pics/graphVarWhite.svg</file>
+        <file>pics/graphWhite.svg</file>
+        <file>pics/plusWhite.svg</file>
+        <file>pics/screenWhite.svg</file>
+        <file>pics/graph.svg</file>
+        <file>pics/fullscreenWhite.svg</file>
+        <file>pics/lineWhite.svg</file>
+        <file>pics/plus.svg</file>
+        <file>pics/camera.svg</file>
+        <file>pics/camera1.svg</file>
+        <file>pics/camera1Black.svg</file>
+    </qresource>
+</RCC>

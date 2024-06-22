@@ -1,0 +1,6520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>guiUI</class>
+ <widget class="QWidget" name="guiUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1920</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>6</number>
+   </property>
+   <widget class="QWidget" name="regimePage">
+    <widget class="QPushButton" name="flight">
+     <property name="geometry">
+      <rect>
+       <x>362</x>
+       <y>214</y>
+       <width>561</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#flight{
+border-image: url(:/pics/lefttop.svg);
+font: italic 25pt &quot;MS Sans Serif&quot;;
+color: white;
+border-color:transparent;
+background-color: transparent;
+}
+#flight:hover{
+border-image: url(:/pics/lefttoplight.svg);
+font: bold italic 28pt &quot;MS Sans Serif&quot;;
+color: white;
+border-color:transparent
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Control center</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="graphicsView">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1920</width>
+       <height>1080</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/pics/down.svg);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ground">
+     <property name="geometry">
+      <rect>
+       <x>988</x>
+       <y>214</y>
+       <width>561</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#ground{
+border-image: url(:/pics/righttop.svg);
+font: italic 25pt &quot;MS Sans Serif&quot;;
+color: white;
+border-color:transparent;
+background-color: transparent;
+}
+#ground:hover{
+border-image: url(:/pics/righttoplight.svg);
+font: bold italic 28pt &quot;MS Sans Serif&quot;;
+color:white;
+border-color:transparent
+}</string>
+     </property>
+     <property name="text">
+      <string>Analysis env.</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="menuReference">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>10</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#menuReference{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuReference:hover {
+ background-color:black; 
+color:white;
+}
+#menuReference:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Help</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>1257</x>
+       <y>640</y>
+       <width>268</width>
+       <height>112</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:white();</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="glabel">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>30</y>
+       <width>91</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="menuTerminal">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#menuTerminal{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuTerminal:hover {
+ background-color:black; 
+color:white;
+}
+#menuTerminal:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Connection</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="menuTestButton">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>10</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#menuTestButton{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuTestButton:hover {
+ background-color:black; 
+color:white;
+}
+#menuTestButton:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Debug panel</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="menuChartButton">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>10</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#menuChartButton{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuChartButton:hover {
+ background-color:black; 
+color:white;
+}
+#menuChartButton:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Device status</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="menuChartButton_2">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>10</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#menuChartButton_2{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuChartButton_2:hover {
+ background-color:black; 
+color:white;
+}
+#menuChartButton_2:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>System status</string>
+     </property>
+    </widget>
+    <zorder>graphicsView</zorder>
+    <zorder>flight</zorder>
+    <zorder>ground</zorder>
+    <zorder>menuReference</zorder>
+    <zorder>label_3</zorder>
+    <zorder>glabel</zorder>
+    <zorder>menuTerminal</zorder>
+    <zorder>menuTestButton</zorder>
+    <zorder>menuChartButton</zorder>
+    <zorder>menuChartButton_2</zorder>
+   </widget>
+   <widget class="QWidget" name="flightPage">
+    <widget class="QPushButton" name="flightTemplate">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>214</y>
+       <width>561</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#flightTemplate{
+border-image: url(:/pics/lefttop.svg);
+font: italic 25pt &quot;MS Sans Serif&quot;;
+color: white;
+border-color:transparent;
+background-color: transparent;
+}
+#flightTemplate:hover{
+border-image: url(:/pics/lefttoplight.svg);
+font: bold italic 28pt &quot;MS Sans Serif&quot;;
+color: white;
+border-color:transparent
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Start</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="flightHandConnect">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>480</y>
+       <width>341</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#flightHandConnect{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#flightHandConnect:hover {
+ background-color:black; 
+color:white;
+}
+#flightHandConnect:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Manually</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="flightLabel">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>230</y>
+       <width>231</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color: transparent; 
+color: black; 
+font: bold italic 20pt &quot;MS Sans Serif&quot;;
+</string>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhHiddenText</set>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-style:normal;&quot;&gt;Regime&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="flightszConnect">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>550</y>
+       <width>341</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#flightszConnect{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#flightszConnect:hover {
+ background-color:black; 
+color:white;
+}
+#flightszConnect:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Automatic</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="flightRechange">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>563</y>
+       <width>561</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#flightRechange{
+border-image: url(:/pics/leftdown.svg);
+font: italic 25pt &quot;MS Sans Serif&quot;;
+color:white;
+border-color:transparent;
+background-color: transparent;
+}
+#flightRechange:hover{
+border-image: url(:/pics/leftdownlight.svg);
+font: bold italic 28pt &quot;MS Sans Serif&quot;;
+color:white;
+border-color:transparent
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Regime</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="graphicsView_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1920</width>
+       <height>1080</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/pics/right.svg);</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="flightPortWriter">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>520</y>
+       <width>121</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;10000&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color: transparent; 
+color: black; 
+font-size:16px;
+font:bold;
+border:none;
+border-color:black; </string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:16px; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;64300&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="menuRegimeFlight">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#menuRegimeFlight{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuRegimeFlight:hover {
+ background-color:black; 
+color:white;
+}
+#menuRegimeFlight:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Main menu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="flightStartConnect">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>510</y>
+       <width>171</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#flightStartConnect{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#flightStartConnect:hover {
+ background-color: black; 
+color:white;
+}
+#flightStartConnect:pressed {
+ background-color: black; 
+color:white;}</string>
+     </property>
+     <property name="text">
+      <string>Connect</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="menuFlightReference">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>10</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#menuFlightReference{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuFlightReference:hover {
+ background-color:black; 
+color:white;
+}
+#menuFlightReference:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Help</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="ipPlace" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1120</x>
+       <y>900</y>
+       <width>171</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color: transparent;</string>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="scrollAreaIp">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>900</y>
+       <width>161</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>159</width>
+        <height>99</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="userLink">
+     <property name="geometry">
+      <rect>
+       <x>960</x>
+       <y>890</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>send special command</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="numTBA">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>890</y>
+       <width>104</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.875pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans Serif'; font-size:9pt;&quot;&gt;5320&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelUserLink">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>840</y>
+       <width>641</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <zorder>graphicsView_2</zorder>
+    <zorder>flightTemplate</zorder>
+    <zorder>flightHandConnect</zorder>
+    <zorder>flightLabel</zorder>
+    <zorder>flightszConnect</zorder>
+    <zorder>flightRechange</zorder>
+    <zorder>flightPortWriter</zorder>
+    <zorder>menuRegimeFlight</zorder>
+    <zorder>flightStartConnect</zorder>
+    <zorder>menuFlightReference</zorder>
+    <zorder>ipPlace</zorder>
+    <zorder>scrollAreaIp</zorder>
+    <zorder>userLink</zorder>
+    <zorder>numTBA</zorder>
+    <zorder>labelUserLink</zorder>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="geometry">
+      <rect>
+       <x>1180</x>
+       <y>80</y>
+       <width>91</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0,255,240); 
+font-size:20px;
+font:bold;
+border-width:2px;
+border-color: rgb(107,165,216); 
+
+ background-color:  transparent; 
+color: rgb(0,255,240); 
+font-size:20px;
+font:bold;
+border-width:2px;
+border:none;
+border-color: rgb(107,165,216); 
+</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>91</width>
+        <height>91</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QTextEdit" name="textStatus">
+     <property name="geometry">
+      <rect>
+       <x>1020</x>
+       <y>270</y>
+       <width>291</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color:  transparent; 
+color:black; 
+font-size:16px;
+font:bold;
+border-width:2px;
+border:none;
+border-color:black; 
+
+</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditPort_2">
+     <property name="geometry">
+      <rect>
+       <x>1060</x>
+       <y>950</y>
+       <width>141</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="cursor" stdset="0">
+      <cursorShape>IBeamCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color:transparent; 
+color:black; 
+font-size:20px;
+font:bold;
+border:2px;
+</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="menuRegimeGround">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#menuRegimeGround{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuRegimeGround:hover {
+ background-color:black; 
+color:white;
+}
+#menuRegimeGround:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Main menu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="showFile">
+     <property name="geometry">
+      <rect>
+       <x>1330</x>
+       <y>540</y>
+       <width>561</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#readFile{
+border-image: url(:/pics/rightdown.svg);
+font: italic 25pt &quot;MS Sans Serif&quot;;
+color: white;
+border-color:transparent;
+background-color: transparent;
+}
+#readFile:hover{
+border-image: url(:/pics/rightdownlight.svg);
+font: bold italic 28pt &quot;MS Sans Serif&quot;;
+color: white;
+border-color:transparent
+}</string>
+     </property>
+     <property name="text">
+      <string>Preview</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="read">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>561</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#read{
+border-image: url(:/pics/lefttop.svg);
+font: italic 25pt &quot;MS Sans Serif&quot;;
+color:white;
+border-color:transparent;
+background-color: transparent;
+}
+#read:hover{
+border-image: url(:/pics/lefttoplight.svg);
+font: bold italic 28pt &quot;MS Sans Serif&quot;;
+color:white;
+border-color:transparent
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Refresh</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="graphicsView_3">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>-20</y>
+       <width>1920</width>
+       <height>1080</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/pics/right.svg);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="groundButton">
+     <property name="geometry">
+      <rect>
+       <x>1330</x>
+       <y>200</y>
+       <width>561</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#groundButton{
+border-image: url(:/pics/righttop.svg);
+font: italic 25pt &quot;MS Sans Serif&quot;;
+color: white;
+border-color:transparent;
+background-color: transparent;
+}
+#groundButton:hover{
+border-image: url(:/pics/righttoplight.svg);
+font: bold italic 28pt &quot;MS Sans Serif&quot;;
+color:white;
+border-color:transparent
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="menuGroundReference">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>10</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#menuGroundReference{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuGroundReference:hover {
+ background-color:black; 
+color:white;
+}
+#menuGroundReference:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Help</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="readFile">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>540</y>
+       <width>561</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#readFile{
+border-image: url(:/pics/leftdown.svg);
+font: italic 25pt &quot;MS Sans Serif&quot;;
+color: white;
+border-color:transparent;
+background-color: transparent;
+}
+#readFile:hover{
+border-image: url(:/pics/leftdownlight.svg);
+font: bold italic 28pt &quot;MS Sans Serif&quot;;
+color: white;
+border-color:transparent
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Open</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="scrollAreaFile">
+     <property name="geometry">
+      <rect>
+       <x>1210</x>
+       <y>940</y>
+       <width>91</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;
+border:none;</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>89</width>
+        <height>89</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="picButtonFileNamePlace" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1310</x>
+       <y>940</y>
+       <width>91</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0,255,240); 
+font-size:20px;
+font:bold;
+border-width:2px;
+border-color: rgb(107,165,216); 
+
+ background-color:  transparent; 
+color: rgb(0,255,240); 
+font-size:20px;
+font:bold;
+border-width:2px;
+border:none;
+border-color: rgb(107,165,216); </string>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="scrollAreaFile_2">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>890</y>
+       <width>371</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;
+border:none;</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_10">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>89</width>
+        <height>89</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <zorder>graphicsView_3</zorder>
+    <zorder>textStatus</zorder>
+    <zorder>textEditPort_2</zorder>
+    <zorder>menuRegimeGround</zorder>
+    <zorder>showFile</zorder>
+    <zorder>read</zorder>
+    <zorder>groundButton</zorder>
+    <zorder>scrollArea</zorder>
+    <zorder>menuGroundReference</zorder>
+    <zorder>readFile</zorder>
+    <zorder>scrollAreaFile</zorder>
+    <zorder>picButtonFileNamePlace</zorder>
+    <zorder>scrollAreaFile_2</zorder>
+   </widget>
+   <widget class="QWidget" name="page_4">
+    <widget class="QPushButton" name="menuRegimeFile">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>10</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#menuRegimeFile{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuRegimeFile:hover {
+ background-color:black; 
+color:white;
+}
+#menuRegimeFile:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Main menu</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="fileBackground">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1920</width>
+       <height>1080</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/pics/midle.svg);</string>
+     </property>
+    </widget>
+    <widget class="QCustomPlot" name="fileSmallGraph" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>220</y>
+       <width>481</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(107,165,216); 
+background-color: rgb(36,117,187); 
+color: rgb(0,255,240); 
+font-size:16px;
+font:bold;
+border-style:outset;
+border: none;
+border-color: rgb(107,165,216); </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="fileTelemetricShowButton">
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>900</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#fileTelemetricShowButton{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#fileTelemetricShowButton:hover {
+ background-color:black; 
+color:white;
+}
+#fileTelemetricShowButton:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Params</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="menuGroundFile">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#menuGroundFile{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuGroundFile:hover {
+ background-color:black; 
+color:white;
+}
+#menuGroundFile:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QCustomPlot" name="fileBigGraph" native="true">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>100</y>
+       <width>111</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(107,165,216); 
+background-color:transparent; 
+color: rgb(0,255,240); 
+font-size:16px;
+font:bold;
+border-style:outset;
+border-width:2px;
+border-color:transparent; </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="rightbottom">
+     <property name="geometry">
+      <rect>
+       <x>1130</x>
+       <y>900</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#rightbottom{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#rightbottom:hover {
+ background-color:black; 
+color:white;
+}
+#rightbottom:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Player</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="menuFileReference">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>10</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#menuFileReference{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuFileReference:hover {
+ background-color:black; 
+color:white;
+}
+#menuFileReference:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Help</string>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="scrollAreaFilePic">
+     <property name="geometry">
+      <rect>
+       <x>1405</x>
+       <y>565</y>
+       <width>485</width>
+       <height>317</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;
+border:none;</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>483</width>
+        <height>315</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="picButtonFilePlace" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1800</x>
+       <y>890</y>
+       <width>91</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="fileBigPhoto">
+     <property name="geometry">
+      <rect>
+       <x>1330</x>
+       <y>890</y>
+       <width>81</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color:transparent; </string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="fileBackgroundBig">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1920</width>
+       <height>1080</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/pics/BIGmidle.svg);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="fileMaxButton">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>520</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+#fileMaxButton{
+border-image: url(:/pics/fullscreen1.svg);
+
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#fileMaxButton:hover {
+border-image: url(:/pics/fullscreenWhite.svg);
+ background-color:black; 
+color:white;
+}
+#fileMaxButton:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="fileMinButton">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>520</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+#fileMinButton{
+border-image: url(:/pics/screen.svg);
+
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#fileMinButton:hover {
+border-image: url(:/pics/screenWhite.svg);
+ background-color:black; 
+color:white;
+}
+#fileMinButton:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="fileButtonsCells">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>1010</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="scrollAreaFileButtons">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>1010</y>
+       <width>81</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;
+border: none;</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_9">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>79</width>
+        <height>59</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="fileShowTrajectoryButton">
+     <property name="geometry">
+      <rect>
+       <x>960</x>
+       <y>900</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#fileShowTrajectoryButton{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#fileShowTrajectoryButton:hover {
+ background-color:black; 
+color:white;
+}
+#fileShowTrajectoryButton:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Map</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="fileSmallTrajectoryView">
+     <property name="geometry">
+      <rect>
+       <x>1790</x>
+       <y>80</y>
+       <width>121</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+ background-color:transparent; </string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="fileBigTrajectory">
+     <property name="geometry">
+      <rect>
+       <x>1640</x>
+       <y>80</y>
+       <width>121</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+ background-color:transparent; </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bigMaxTrajectoryFile">
+     <property name="geometry">
+      <rect>
+       <x>1295</x>
+       <y>520</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#bigMaxTrajectoryFile{
+background-color: transparent; 
+border:none;
+color: yellow;
+font-size: 22px;
+font:bold;
+}
+
+#bigMaxTrajectoryFile:hover {
+ background-color: rgb(36,117,187); 
+color: yellow;
+}
+#bigMaxTrajectoryFile:pressed {
+ background-color: rgb(107,165,216); 
+
+}</string>
+     </property>
+     <property name="text">
+      <string>+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="minTrajectoryFile">
+     <property name="geometry">
+      <rect>
+       <x>1353</x>
+       <y>235</y>
+       <width>50</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#minTrajectoryFile{
+background-color: transparent; 
+border:none;
+color :yellow; 
+font-size: 22px;
+font:bold;
+}
+
+#minTrajectoryFile:hover {
+ background-color: rgb(107,165,216); 
+color: yellow;
+}
+#minTrajectoryFile:pressed {
+ background-color: rgb(107,165,216); 
+
+}</string>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="maxTrajectoryFile">
+     <property name="geometry">
+      <rect>
+       <x>1353</x>
+       <y>215</y>
+       <width>50</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#maxTrajectoryFile{
+background-color: transparent; 
+border:none;
+color: yellow;
+font-size: 22px;
+font:bold;
+}
+
+#maxTrajectoryFile:hover {
+ background-color: rgb(107,165,216); 
+color: yellow;
+}
+#maxTrajectoryFile:pressed {
+ background-color: rgb(107,165,216); 
+
+}</string>
+     </property>
+     <property name="text">
+      <string>+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bigMinTrajectoryFile">
+     <property name="geometry">
+      <rect>
+       <x>1295</x>
+       <y>550</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#bigMinTrajectoryFile{
+background-color: transparent; 
+border:none;
+color :yellow; 
+font-size: 22px;
+font:bold;
+}
+
+#bigMinTrajectoryFile:hover {
+ background-color: rgb(36,117,187); 
+color: yellow;
+}
+#bigMinTrajectoryFile:pressed {
+ background-color: rgb(107,165,216); 
+
+}</string>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="fileRocketPlace">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>1020</y>
+       <width>331</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widgetFileForGraphLayout" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1470</x>
+       <y>20</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="graphFileWidgetArea">
+     <property name="geometry">
+      <rect>
+       <x>1530</x>
+       <y>20</y>
+       <width>61</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+background-color: transparent; </string>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>61</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="fileBigVideo">
+     <property name="geometry">
+      <rect>
+       <x>1520</x>
+       <y>900</y>
+       <width>171</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color:transparent; </string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="fileShowGraphButton">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>900</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#fileShowGraphButton{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#fileShowGraphButton:hover {
+ background-color:black; 
+color:white;
+}
+#fileShowGraphButton:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Graph</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <zorder>fileBackgroundBig</zorder>
+    <zorder>fileBackground</zorder>
+    <zorder>menuRegimeFile</zorder>
+    <zorder>fileSmallGraph</zorder>
+    <zorder>fileTelemetricShowButton</zorder>
+    <zorder>menuGroundFile</zorder>
+    <zorder>rightbottom</zorder>
+    <zorder>fileBigGraph</zorder>
+    <zorder>menuFileReference</zorder>
+    <zorder>scrollAreaFilePic</zorder>
+    <zorder>picButtonFilePlace</zorder>
+    <zorder>fileBigPhoto</zorder>
+    <zorder>fileMaxButton</zorder>
+    <zorder>fileMinButton</zorder>
+    <zorder>fileButtonsCells</zorder>
+    <zorder>scrollAreaFileButtons</zorder>
+    <zorder>fileShowTrajectoryButton</zorder>
+    <zorder>fileSmallTrajectoryView</zorder>
+    <zorder>fileBigTrajectory</zorder>
+    <zorder>bigMaxTrajectoryFile</zorder>
+    <zorder>minTrajectoryFile</zorder>
+    <zorder>maxTrajectoryFile</zorder>
+    <zorder>bigMinTrajectoryFile</zorder>
+    <zorder>fileRocketPlace</zorder>
+    <zorder>widgetFileForGraphLayout</zorder>
+    <zorder>graphFileWidgetArea</zorder>
+    <zorder>fileBigVideo</zorder>
+    <zorder>fileShowGraphButton</zorder>
+   </widget>
+   <widget class="QWidget" name="telemetricPage">
+    <widget class="QLabel" name="telemetricButtonsCells">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>1020</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="telemetricBackground">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1920</width>
+       <height>1080</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/pics/midle.svg);
+</string>
+     </property>
+     <property name="interactive">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="telemetricErrorLabel">
+     <property name="geometry">
+      <rect>
+       <x>820</x>
+       <y>170</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color: rgb(255,0,0); </string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="telemetricGetPhoto">
+     <property name="geometry">
+      <rect>
+       <x>1760</x>
+       <y>970</y>
+       <width>131</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Ignored">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+#telemetricGetPhoto{
+border-image: url(:/pics/camera1.svg);
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#telemetricGetPhoto:hover {
+border-image: url(:/pics/camera1Black.svg);
+
+ background-color:black; 
+color:black;
+}
+#telemetricGetPhoto:checked {
+border-image: url(:/pics/camera1Black.svg);
+
+ background-color:black; 
+color: black;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="telemetricTrajectoryButton">
+     <property name="geometry">
+      <rect>
+       <x>960</x>
+       <y>900</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#telemetricTrajectoryButton{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#telemetricTrajectoryButton:hover {
+ background-color:black; 
+color:white;
+}
+#telemetricTrajectoryButton:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Map</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="menuRegimeTelemetric">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>40</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#menuRegimeTelemetric{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuRegimeTelemetric:hover {
+ background-color:black; 
+color:white;
+}
+#menuRegimeTelemetric:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Main menu</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="telemetricHeightInfo">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>150</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="menuFlightTelemetric">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#menuFlightTelemetric{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuFlightTelemetric:hover {
+ background-color:black; 
+color:white;
+}
+#menuFlightTelemetric:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="telemetricSpeedInfo">
+     <property name="geometry">
+      <rect>
+       <x>1230</x>
+       <y>150</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:22pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="telemetricShowPhoto">
+     <property name="geometry">
+      <rect>
+       <x>1130</x>
+       <y>900</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#telemetricShowPhoto{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#telemetricShowPhoto:hover {
+ background-color:black; 
+color:white;
+}
+#telemetricShowPhoto:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Camera</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="telemetricHeightLabel">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>180</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="text">
+      <string>Meters</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="telemetricSpeedLabel">
+     <property name="geometry">
+      <rect>
+       <x>1230</x>
+       <y>180</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="text">
+      <string>km/h</string>
+     </property>
+    </widget>
+    <widget class="QCustomPlot" name="telemetricSmallGraph" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>220</y>
+       <width>481</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent; 
+color:black; 
+font-size:18px;
+font:bold;
+border-style:outset;
+border-width:3px;
+border-color:black; 
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="telemetricErrorInfo">
+     <property name="geometry">
+      <rect>
+       <x>1000</x>
+       <y>170</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:20px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color: rgb(255,0,0); </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="telemetricWriteButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>930</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#telemetricWriteButton:checked {
+ background-color: rgb(107,165,216); 
+color: rgb(0,244,255);
+}
+#telemetricWriteButton{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 14px;
+font:bold;
+}
+
+#telemetricWriteButton:hover {
+ background-color:black; 
+color:white;
+}
+#telemetricWriteButton:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>save file</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="telemetricShowButton">
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>900</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#telemetricShowButton{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#telemetricShowButton:hover {
+ background-color:black; 
+color:white;
+}
+#telemetricShowButton:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Params</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="telemetricGraphInfo">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>220</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:18px;
+font:bold;
+background-color: transparent; 
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="telemetricBigPhoto">
+     <property name="geometry">
+      <rect>
+       <x>1330</x>
+       <y>890</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color: black; 
+color:white;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="menuTelemetricReference">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>40</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#menuTelemetricReference{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuTelemetricReference:hover {
+ background-color:black; 
+color:white;
+}
+#menuTelemetricReference:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Help</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="menuRemoteControl">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>960</y>
+       <width>241</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#menuRemoteControl{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size:22px;
+font:bold;
+}
+
+#menuRemoteControl:hover {
+ background-color:black; 
+color:white;
+}
+#menuRemoteControl:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Control panel</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="plusButton">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>520</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#plusButton{
+border-image: url(:/pics/fullscreen1.svg);
+
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#plusButton:hover {
+border-image: url(:/pics/fullscreenWhite.svg);
+ background-color:black; 
+color:white;
+}
+#plusButton:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="minusButton">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>520</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+#minusButton{
+border-image: url(:/pics/screen.svg);
+
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#minusButton:hover {
+border-image: url(:/pics/screenWhite.svg);
+ background-color:black; 
+color:white;
+}
+#minusButton:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="scrollAreaPic">
+     <property name="geometry">
+      <rect>
+       <x>1410</x>
+       <y>566</y>
+       <width>482</width>
+       <height>315</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent; 
+color:black; 
+font-size:18px;
+font:bold;
+border-style:outset;
+border-width:2px;
+border-color:black; 
+</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>483</width>
+        <height>315</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="picButtonPlace" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1810</x>
+       <y>890</y>
+       <width>81</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color: transparent; </string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="telemetricBackgroundBig">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1920</width>
+       <height>1080</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/pics/BIGmidle.svg);</string>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="scrollAreaButtons">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>1020</y>
+       <width>81</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;
+border: none;</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_8">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>79</width>
+        <height>59</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>1020</y>
+       <width>131</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout"/>
+    </widget>
+    <widget class="QLabel" name="rocketPlace">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>1030</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="serverButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>890</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#serverButton:indicator{
+background-color:transparent;
+}
+
+#serverButton{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 16px;
+font:bold;
+}
+
+#serverButton:hover {
+ background-color:black; 
+color:white;
+}
+#serverButton:checked {
+ background-color:black; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>&amp;socket</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">buttonGroup</string>
+     </attribute>
+    </widget>
+    <widget class="QScrollArea" name="telemetricInfoScrollArea">
+     <property name="geometry">
+      <rect>
+       <x>28</x>
+       <y>566</y>
+       <width>482</width>
+       <height>315</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent; 
+color:black; 
+font-size:18px;
+font:bold;
+border-style:outset;
+border-width:3px;
+border-color:transparent; 
+</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_11">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>79</width>
+        <height>59</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="clearInfoSmall">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>840</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#clearInfoSmall{
+border-image: url(:/pics/crossSmaller.svg);
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#clearInfoSmall:hover {
+border-image: url(:/pics/crossWhite.svg);
+background-color: black;
+color:black;
+}
+#clearInfoSmall:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="telemetricSmallTrajectoryView">
+     <property name="geometry">
+      <rect>
+       <x>970</x>
+       <y>20</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+ background-color: transparent; </string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="telemetricBigTrajectory">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>20</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+ background-color:transparent; </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="minTrajectory">
+     <property name="geometry">
+      <rect>
+       <x>1353</x>
+       <y>235</y>
+       <width>50</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#minTrajectory{
+background-color: transparent; 
+border:none;
+color :yellow; 
+font-size: 22px;
+font:bold;
+}
+
+#minTrajectory:hover {
+ background-color: rgb(107,165,216); 
+color: yellow;
+}
+#minTrajectory:pressed {
+ background-color: rgb(107,165,216); 
+
+}</string>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="maxTrajectory">
+     <property name="geometry">
+      <rect>
+       <x>1353</x>
+       <y>215</y>
+       <width>50</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#maxTrajectory{
+background-color: transparent; 
+border:none;
+color: yellow;
+font-size: 22px;
+font:bold;
+}
+
+#maxTrajectory:hover {
+ background-color: rgb(107,165,216); 
+color: yellow;
+}
+#maxTrajectory:pressed {
+ background-color: rgb(107,165,216); 
+
+}</string>
+     </property>
+     <property name="text">
+      <string>+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bigMinTrajectory">
+     <property name="geometry">
+      <rect>
+       <x>1295</x>
+       <y>550</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#bigMinTrajectory{
+background-color: transparent; 
+border:none;
+color :yellow; 
+font-size: 22px;
+font:bold;
+}
+
+#bigMinTrajectory:hover {
+ background-color: rgb(36,117,187); 
+color: yellow;
+}
+#bigMinTrajectory:pressed {
+ background-color: rgb(107,165,216); 
+
+}</string>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bigMaxTrajectory">
+     <property name="geometry">
+      <rect>
+       <x>1295</x>
+       <y>520</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#bigMaxTrajectory{
+background-color: transparent; 
+border:none;
+color: yellow;
+font-size: 22px;
+font:bold;
+}
+
+#bigMaxTrajectory:hover {
+ background-color: rgb(36,117,187); 
+color: yellow;
+}
+#bigMaxTrajectory:pressed {
+ background-color: rgb(107,165,216); 
+
+}</string>
+     </property>
+     <property name="text">
+      <string>+</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="formLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>1260</x>
+       <y>10</y>
+       <width>71</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="graphLayout"/>
+    </widget>
+    <widget class="QWidget" name="widgetForGraphLayout" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1340</x>
+       <y>10</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="graphWidgetArea">
+     <property name="geometry">
+      <rect>
+       <x>1400</x>
+       <y>10</y>
+       <width>61</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent; 
+color:black; 
+font-size:18px;
+font:bold;
+border-style:outset;
+border-width:3px;
+border-color:transparent; 
+</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>55</width>
+        <height>45</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="graphClearButton">
+     <property name="geometry">
+      <rect>
+       <x>1702</x>
+       <y>520</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#graphClearButton{
+border-image: url(:/pics/crossSmaller.svg);
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#graphClearButton:hover {
+border-image: url(:/pics/crossWhite.svg);
+background-color: black;
+color:black;
+}
+#graphClearButton:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sendMessage">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>930</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#sendMessage:checked {
+ background-color: rgb(107,165,216); 
+color: rgb(0,244,255);
+}
+#sendMessage{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size:14px;
+font:bold;
+}
+
+#sendMessage:hover {
+ background-color:black; 
+color:white;
+}
+#sendMessage:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>send message</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="uartButton">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>890</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#uartButton:indicator{
+background-color:transparent;
+}
+#uartButton{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 16px;
+font:bold;
+}
+
+#uartButton:hover {
+ background-color:black; 
+color:white;
+}
+#uartButton:checked {
+ background-color:black; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>&amp;uart</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">buttonGroup</string>
+     </attribute>
+    </widget>
+    <widget class="QPushButton" name="telemetricGraphButton">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>900</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#telemetricGraphButton{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#telemetricGraphButton:hover {
+ background-color:black; 
+color:white;
+}
+#telemetricGraphButton:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Graphs</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>1530</x>
+       <y>0</y>
+       <width>261</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="layoutMap_3"/>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>1410</x>
+       <y>210</y>
+       <width>481</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="layoutMap_4"/>
+    </widget>
+    <zorder>telemetricBackgroundBig</zorder>
+    <zorder>telemetricBackground</zorder>
+    <zorder>telemetricErrorLabel</zorder>
+    <zorder>telemetricGetPhoto</zorder>
+    <zorder>telemetricTrajectoryButton</zorder>
+    <zorder>menuRegimeTelemetric</zorder>
+    <zorder>telemetricHeightInfo</zorder>
+    <zorder>menuFlightTelemetric</zorder>
+    <zorder>telemetricSpeedInfo</zorder>
+    <zorder>telemetricShowPhoto</zorder>
+    <zorder>telemetricHeightLabel</zorder>
+    <zorder>telemetricSpeedLabel</zorder>
+    <zorder>telemetricSmallGraph</zorder>
+    <zorder>telemetricErrorInfo</zorder>
+    <zorder>telemetricWriteButton</zorder>
+    <zorder>telemetricShowButton</zorder>
+    <zorder>telemetricGraphInfo</zorder>
+    <zorder>telemetricButtonsCells</zorder>
+    <zorder>menuTelemetricReference</zorder>
+    <zorder>menuRemoteControl</zorder>
+    <zorder>minusButton</zorder>
+    <zorder>plusButton</zorder>
+    <zorder>telemetricBigPhoto</zorder>
+    <zorder>scrollAreaPic</zorder>
+    <zorder>picButtonPlace</zorder>
+    <zorder>scrollAreaButtons</zorder>
+    <zorder>verticalLayoutWidget</zorder>
+    <zorder>rocketPlace</zorder>
+    <zorder>serverButton</zorder>
+    <zorder>telemetricSmallTrajectoryView</zorder>
+    <zorder>telemetricBigTrajectory</zorder>
+    <zorder>minTrajectory</zorder>
+    <zorder>maxTrajectory</zorder>
+    <zorder>bigMinTrajectory</zorder>
+    <zorder>bigMaxTrajectory</zorder>
+    <zorder>formLayoutWidget</zorder>
+    <zorder>widgetForGraphLayout</zorder>
+    <zorder>graphWidgetArea</zorder>
+    <zorder>graphClearButton</zorder>
+    <zorder>sendMessage</zorder>
+    <zorder>uartButton</zorder>
+    <zorder>telemetricGraphButton</zorder>
+    <zorder>telemetricInfoScrollArea</zorder>
+    <zorder>clearInfoSmall</zorder>
+    <zorder>verticalLayoutWidget_3</zorder>
+    <zorder>verticalLayoutWidget_4</zorder>
+   </widget>
+   <widget class="QWidget" name="page">
+    <widget class="QPushButton" name="menuReferenceRegime">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#menuReferenceRegime{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuReferenceRegime:hover {
+ background-color:black; 
+color:white;
+}
+#menuReferenceRegime:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="flightLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>30</y>
+       <width>231</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color: transparent; 
+color: black; 
+font: bold  20pt ;
+</string>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhHiddenText</set>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Help&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="flightLabel_3">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>190</y>
+       <width>1361</width>
+       <height>601</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color: transparent; 
+color:black; 
+font: bold italic 40pt &quot;MS Sans Serif&quot;;
+</string>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhHiddenText</set>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;This is a demonstration version. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Certain functions have been removed, and most options have been renamed and altered.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;This version is intended solely to showcase personal programming skills.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="receiveFromHostArea">
+     <property name="geometry">
+      <rect>
+       <x>1420</x>
+       <y>40</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:white;
+font: 16px;
+ background-color: transparent; 
+border:none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="telemetricBigTrajectory_2">
+     <property name="geometry">
+      <rect>
+       <x>1020</x>
+       <y>170</y>
+       <width>671</width>
+       <height>441</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+ background-color:transparent; </string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="remoteControl">
+    <widget class="QPushButton" name="menuRemoteControlTelemetric">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#menuRemoteControlTelemetric{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuRemoteControlTelemetric:hover {
+ background-color:black; 
+color:white;
+}
+#menuRemoteControlTelemetric:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="hardLandingButton">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>490</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#hardLandingButton{
+font-size:17px;font:bold; border: 1px solid black; color: black}
+#hardLandingButton::hover{background-color: grey}
+#hardLandingButton::checked{background-color: rgb(255,0,0); color:black}</string>
+     </property>
+     <property name="text">
+      <string>Reserve</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="attackProhibitionButton">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>530</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#attackProhibitionButton{
+font-size:17px;font:bold; border: 1px solid black; color: black}
+#attackProhibitionButton::hover{background-color: grey}
+#attackProhibitionButton::checked{background-color: rgb(255,0,0); color:black}</string>
+     </property>
+     <property name="text">
+      <string>Reserve</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="returnButton">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>570</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+#returnButton{
+font-size:17px;font:bold; border: 1px solid black; color: black}
+#returnButton::hover{background-color: grey}
+#returnButton::checked{background-color: rgb(255,0,0); color:black}</string>
+     </property>
+     <property name="text">
+      <string>Reserve</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlHeightLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>130</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="text">
+      <string>Meters</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlSpeedLabel">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>130</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="text">
+      <string>km/h</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlHeightInfo">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>100</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlSpeedInfo">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>100</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:22pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="attitudeIndicator" native="true">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>160</y>
+       <width>300</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(9,28,102);</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="attitudeIndicator_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>160</y>
+       <width>300</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(9,28,102);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlErrorInfo">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>100</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:20px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color: rgb(255,0,0); </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlErrorLabel">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>100</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color: rgb(255,0,0); </string>
+     </property>
+     <property name="text">
+      <string>Error</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="controlPhotoArea" native="true">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>620</y>
+       <width>581</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:grey;</string>
+     </property>
+     <widget class="QPushButton" name="controlGetPhoto">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>340</y>
+        <width>101</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+#controlGetPhoto{
+
+border-image: url(:/pics/camera.svg);
+
+border-color:transparant
+}
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="controlPhotoArea_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>620</y>
+       <width>581</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:grey;</string>
+     </property>
+     <widget class="QPushButton" name="controlGetPhoto_2">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>340</y>
+        <width>101</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+#controlGetPhoto_2{
+
+border-image: url(:/pics/camera.svg);
+
+border-color:transparant
+}
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="controlPhotoArea_3" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1300</x>
+       <y>620</y>
+       <width>581</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:grey;</string>
+     </property>
+     <widget class="QPushButton" name="controlGetPhoto_3">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>340</y>
+        <width>101</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+#controlGetPhoto_3{
+
+border-image: url(:/pics/camera.svg);
+
+border-color:transparant
+}
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="returnButton_2">
+     <property name="geometry">
+      <rect>
+       <x>1050</x>
+       <y>570</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#returnButton_2{
+font-size:17px;font:bold; border: 1px solid black; color: black}
+#returnButton_2::hover{background-color: grey}
+#returnButton_2::checked{background-color: rgb(255,0,0); color:black}</string>
+     </property>
+     <property name="text">
+      <string>Return</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="hardLandingButton_2">
+     <property name="geometry">
+      <rect>
+       <x>1050</x>
+       <y>490</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#hardLandingButton_2{
+font-size:17px;font:bold; border: 1px solid black; color: black}
+#hardLandingButton_2::hover{background-color: grey}
+#hardLandingButton_2::checked{background-color: rgb(255,0,0); color:black}</string>
+     </property>
+     <property name="text">
+      <string>Landing</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="attackProhibitionButton_2">
+     <property name="geometry">
+      <rect>
+       <x>1050</x>
+       <y>530</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#attackProhibitionButton_2{
+font-size:17px;font:bold; border: 1px solid black; color: black}
+#attackProhibitionButton_2::hover{background-color: grey}
+#attackProhibitionButton_2::checked{background-color: rgb(255,0,0); color:black}</string>
+     </property>
+     <property name="text">
+      <string>Reserve</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="hardLandingButton_3">
+     <property name="geometry">
+      <rect>
+       <x>1680</x>
+       <y>490</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#hardLandingButton_3{
+font-size:17px;font:bold; border: 1px solid black; color: black}
+#hardLandingButton_3::hover{background-color: grey}
+#hardLandingButton_3::checked{background-color: rgb(255,0,0); color:black}</string>
+     </property>
+     <property name="text">
+      <string>Landing</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="attackProhibitionButton_3">
+     <property name="geometry">
+      <rect>
+       <x>1680</x>
+       <y>530</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#attackProhibitionButton_3{
+font-size:17px;font:bold; border: 1px solid black; color: black}
+#attackProhibitionButton_3::hover{background-color: grey}
+#attackProhibitionButton_3::checked{background-color: rgb(255,0,0); color:black}</string>
+     </property>
+     <property name="text">
+      <string>Reserve</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="returnButton_3">
+     <property name="geometry">
+      <rect>
+       <x>1680</x>
+       <y>570</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#returnButton_3{
+font-size:17px;font:bold; border: 1px solid black; color: black}
+#returnButton_3::hover{background-color: grey}
+#returnButton_3::checked{background-color: rgb(255,0,0); color:black}</string>
+     </property>
+     <property name="text">
+      <string>Return</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlSpeedInfo_2">
+     <property name="geometry">
+      <rect>
+       <x>1150</x>
+       <y>100</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:22pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlSpeedLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>1150</x>
+       <y>130</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="text">
+      <string>km/h</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlSpeedInfo_3">
+     <property name="geometry">
+      <rect>
+       <x>1770</x>
+       <y>100</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:22pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlSpeedLabel_3">
+     <property name="geometry">
+      <rect>
+       <x>1770</x>
+       <y>130</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="text">
+      <string>km/h</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlHeightLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>130</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="text">
+      <string>Meters</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlHeightInfo_2">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>100</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlHeightLabel_3">
+     <property name="geometry">
+      <rect>
+       <x>1310</x>
+       <y>130</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="text">
+      <string>Meters</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlHeightInfo_3">
+     <property name="geometry">
+      <rect>
+       <x>1310</x>
+       <y>100</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color:black; </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlErrorLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>100</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color: rgb(255,0,0); </string>
+     </property>
+     <property name="text">
+      <string>Error</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlErrorInfo_2">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>100</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:20px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color: rgb(255,0,0); </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlErrorLabel_3">
+     <property name="geometry">
+      <rect>
+       <x>1440</x>
+       <y>100</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:22px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color: rgb(255,0,0); </string>
+     </property>
+     <property name="text">
+      <string>Error</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="controlErrorInfo_3">
+     <property name="geometry">
+      <rect>
+       <x>1580</x>
+       <y>100</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:20px;
+font:bold;
+background-color: none;
+border: none;
+background-repeat: none;
+color: rgb(255,0,0); </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="indico">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>160</y>
+       <width>401</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="heightLine">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>160</y>
+       <width>61</width>
+       <height>301</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="speedLine">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>160</y>
+       <width>61</width>
+       <height>301</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="speedLine_3">
+     <property name="geometry">
+      <rect>
+       <x>1790</x>
+       <y>160</y>
+       <width>61</width>
+       <height>301</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="heightLine_3">
+     <property name="geometry">
+      <rect>
+       <x>1300</x>
+       <y>160</y>
+       <width>61</width>
+       <height>301</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="speedLine_2">
+     <property name="geometry">
+      <rect>
+       <x>1160</x>
+       <y>160</y>
+       <width>61</width>
+       <height>301</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="indico_2">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>160</y>
+       <width>401</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:3px;
+border-color:rgb(0, 255, 255)</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="heightLine_2">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>160</y>
+       <width>61</width>
+       <height>301</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="indico_3">
+     <property name="geometry">
+      <rect>
+       <x>1380</x>
+       <y>160</y>
+       <width>401</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:3px;
+border-color:rgb(0, 255, 255)</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="parachuteButton">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>570</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+
+#parachuteButton{
+font-size:17px;font:bold; border: 1px solid black; color: black}
+#parachuteButton::hover{background-color: grey}
+#parachuteButton::checked{background-color: rgb(255,0,0); color:black}</string>
+     </property>
+     <property name="text">
+      <string>Landing</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="returnPPMButton">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>530</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+#returnPPMButton{
+font-size:17px;font:bold; border: 1px solid black; color: black}
+#returnPPMButton::hover{background-color: grey}
+#returnPPMButton::checked{background-color: rgb(255,0,0); color:black}</string>
+     </property>
+     <property name="text">
+      <string>Return</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="photoButton">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>490</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#photoButton{
+font-size:17px;font:bold; border: 1px solid black; color: black}
+#photoButton::hover{background-color: grey}
+#photoButton::checked{background-color: rgb(255,0,0); color:black}</string>
+     </property>
+     <property name="text">
+      <string>Camera</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="deadButton">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>570</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#deadButton{
+font-size:17px;font:bold; border: 1px solid black; color: black}
+#deadButton::hover{background-color: grey}
+#deadButton::checked{background-color: rgb(255,0,0); color:black}</string>
+     </property>
+     <property name="text">
+      <string>Destroy</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="terminalPage">
+    <widget class="QPushButton" name="menuTerminalRegime">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+#menuTerminalRegime{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuTerminalRegime:hover {
+ background-color:black; 
+color:white;
+}
+#menuTerminalRegime:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="selectBox">
+     <property name="geometry">
+      <rect>
+       <x>1440</x>
+       <y>120</y>
+       <width>411</width>
+       <height>341</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:white;
+color :black;
+font-size: 18px;
+font:bold</string>
+     </property>
+     <property name="title">
+      <string>Serial port settings</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QComboBox" name="serialPortInfoListBox"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="descriptionLabel">
+        <property name="text">
+         <string>Description:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="manufacturerLabel">
+        <property name="text">
+         <string>Manufacturer:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="serialNumberLabel">
+        <property name="text">
+         <string>Serial number:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="locationLabel">
+        <property name="text">
+         <string>Country:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="vidLabel">
+        <property name="text">
+         <string> Vendor id:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="pidLabel">
+        <property name="text">
+         <string>Product id:</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QGroupBox" name="parametersBox">
+     <property name="geometry">
+      <rect>
+       <x>1440</x>
+       <y>500</y>
+       <width>411</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:white;
+color :black;
+font-size: 18px;
+font:bold</string>
+     </property>
+     <property name="title">
+      <string>Params</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="baudRateLabel">
+        <property name="text">
+         <string>Baud rate:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="baudRateBox"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="dataBitsLabel">
+        <property name="text">
+         <string>Data bits:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="dataBitsBox"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="stopBitsBox"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="parityBox"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="stopBitsLabel">
+        <property name="text">
+         <string>Stop bits:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="flowControlBox"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="flowControlLabel">
+        <property name="text">
+         <string>Stream control:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="parityLabel">
+        <property name="text">
+         <string>Parity:</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="applyButton">
+     <property name="geometry">
+      <rect>
+       <x>1700</x>
+       <y>840</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+#applyButton{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#applyButton:hover {
+ background-color:black; 
+color:white;
+}
+#applyButton:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Apply</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="localEchoCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>1440</x>
+       <y>840</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:white;
+color :black;
+font-size: 18px;
+font:bold</string>
+     </property>
+     <property name="text">
+      <string>Local echo</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="actionConnect">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>890</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#actionConnect:indicator{
+background-color:transparent}
+
+
+
+#actionConnect{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#actionConnect:hover {
+ background-color:black; 
+color:white;
+}
+#actionConnect:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Connect</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="actionDisconnect">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>890</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#actionDisconnect:indicator{
+background-color:transparent}
+
+
+#actionDisconnect{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#actionDisconnect:hover {
+ background-color:black; 
+color:white;
+}
+#actionDisconnect:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Disconnect</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="actionClear">
+     <property name="geometry">
+      <rect>
+       <x>1280</x>
+       <y>890</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+#actionClear{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#actionClear:hover {
+ background-color:black; 
+color:white;
+}
+#actionClear:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="statusBar">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>840</y>
+       <width>1341</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:white;
+color :black;
+font-size: 18px;
+font:bold</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="scrollArea_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>120</y>
+       <width>1341</width>
+       <height>711</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:white;
+color :black;
+font-size: 18px;
+font:bold;</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_12">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1339</width>
+        <height>709</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="fileSent">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>890</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#fileSent{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#fileSent:hover {
+ background-color:black; 
+color:white;
+}
+#fileSent:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Send file</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="blaFileButton">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>1460</x>
+       <y>910</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>ForbiddenCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#blaFileButton{
+background-color: red; 
+border:none;
+color :black; 
+font-size: 18px;
+font:bold;
+}
+
+#blaFileButton:checked {
+ background-color:green; 
+color: black;
+}</string>
+     </property>
+     <property name="text">
+      <string>file1</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="meteoFileButton">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>1540</x>
+       <y>910</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>ForbiddenCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#meteoFileButton{
+background-color: red; 
+border:none;
+color :black; 
+font-size: 18px;
+font:bold;
+}
+
+#meteoFileButton:checked {
+ background-color:green; 
+color: black;
+}</string>
+     </property>
+     <property name="text">
+      <string>file2</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ntiFileButton">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>1620</x>
+       <y>910</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>ForbiddenCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#ntiFileButton{
+background-color: red; 
+border:none;
+color :black; 
+font-size: 18px;
+font:bold;
+}
+
+#ntiFileButton:checked {
+ background-color:green; 
+color: black;
+}</string>
+     </property>
+     <property name="text">
+      <string>file3</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="piFileButton">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>1700</x>
+       <y>910</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>ForbiddenCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#piFileButton{
+background-color: red; 
+border:none;
+color :black; 
+font-size: 18px;
+font:bold;
+}
+
+#piFileButton:checked {
+ background-color:green; 
+color: black;
+}</string>
+     </property>
+     <property name="text">
+      <string>file4</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="psvFileButton">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>1780</x>
+       <y>910</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#psvFileButton{
+background-color: red; 
+border:none;
+color :black; 
+font-size: 18px;
+font:bold;
+}
+
+#psvFileButton:checked {
+ background-color:green; 
+color: black;
+}</string>
+     </property>
+     <property name="text">
+      <string>file5</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="allFilesButton">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>1460</x>
+       <y>950</y>
+       <width>391</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#allFilesButton{
+background-color: white; 
+border:none;
+color :white; 
+font-size: 18px;
+font:bold;
+}
+
+#allFilesButton:checked {
+ background-color:green; 
+color: black;
+}</string>
+     </property>
+     <property name="text">
+      <string>Все файлы были переданы</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="testPage">
+    <widget class="QPushButton" name="menuTestRegime">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+#menuTestRegime{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuTestRegime:hover {
+ background-color:black; 
+color:white;
+}
+#menuTestRegime:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="console">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>1221</width>
+       <height>721</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:black;
+color:white;</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.875pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8.25pt;&quot;&gt;console&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditFilePath">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>860</y>
+       <width>511</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:black;
+color:white;</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.875pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>830</y>
+       <width>511</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.875pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans Serif'; font-size:9pt;&quot;&gt;Received info&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="chartPage">
+    <widget class="QPushButton" name="menuRegimeChart">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#menuRegimeChart{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuRegimeChart:hover {
+ background-color:black; 
+color:white;
+}
+#menuRegimeChart:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="massiveButtonsPlace">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>90</y>
+       <width>261</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>90</y>
+       <width>191</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="telemetricChartPage">
+    <widget class="QPushButton" name="menuRegimeChart_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#menuRegimeChart_2{
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#menuRegimeChart_2:hover {
+ background-color:black; 
+color:white;
+}
+#menuRegimeChart_2:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="massiveButtonsPlace_2">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>100</y>
+       <width>261</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>100</y>
+       <width>191</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="closeIcon">
+   <property name="geometry">
+    <rect>
+     <x>1850</x>
+     <y>20</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#closeIcon{
+border-image: url(:/pics/crossSmaller.svg);
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 22px;
+font:bold;
+}
+
+#closeIcon:hover {
+
+ background-color:red; 
+color:black;
+}
+#closeIcon:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="minimizeIcon">
+   <property name="geometry">
+    <rect>
+     <x>1800</x>
+     <y>20</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#minimizeIcon{
+border-image: url(:/pics/lineHide.svg);
+background-color: transparent; 
+border:none;
+color :black; 
+font-size: 32px;
+font:bold;
+}
+
+#minimizeIcon:hover {
+border-image: url(:/pics/lineWhite.svg);
+
+ background-color:black; 
+color:white;
+}
+#minimizeIcon:pressed {
+ background-color:grey; 
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>stackedWidget</zorder>
+  <zorder>minimizeIcon</zorder>
+  <zorder>closeIcon</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>telemetricShowButton</sender>
+   <signal>clicked()</signal>
+   <receiver>telemetricBigPhoto</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>468</x>
+     <y>785</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>648</x>
+     <y>836</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricTrajectoryButton</sender>
+   <signal>clicked()</signal>
+   <receiver>telemetricBigPhoto</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1630</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>960</x>
+     <y>510</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileTelemetricShowButton</sender>
+   <signal>clicked()</signal>
+   <receiver>fileBigGraph</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>388</x>
+     <y>842</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>898</x>
+     <y>740</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileShowGraphButton</sender>
+   <signal>clicked()</signal>
+   <receiver>fileBigGraph</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>445</x>
+     <y>450</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>994</x>
+     <y>517</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileTelemetricShowButton</sender>
+   <signal>clicked()</signal>
+   <receiver>fileBigPhoto</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>808</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1149</x>
+     <y>915</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileShowTrajectoryButton</sender>
+   <signal>clicked()</signal>
+   <receiver>fileBigGraph</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1388</x>
+     <y>214</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>948</x>
+     <y>465</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileShowTrajectoryButton</sender>
+   <signal>clicked()</signal>
+   <receiver>fileBigPhoto</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1379</x>
+     <y>374</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1219</x>
+     <y>931</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileShowGraphButton</sender>
+   <signal>clicked()</signal>
+   <receiver>fileBigPhoto</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>439</x>
+     <y>521</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1158</x>
+     <y>927</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricTrajectoryButton</sender>
+   <signal>clicked()</signal>
+   <receiver>scrollAreaButtons</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1454</x>
+     <y>517</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>346</x>
+     <y>1026</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricShowPhoto</sender>
+   <signal>clicked()</signal>
+   <receiver>scrollAreaButtons</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1368</x>
+     <y>847</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>371</x>
+     <y>1015</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileShowGraphButton</sender>
+   <signal>clicked()</signal>
+   <receiver>scrollAreaFileButtons</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>86</x>
+     <y>508</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>102</x>
+     <y>1033</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricShowButton</sender>
+   <signal>clicked()</signal>
+   <receiver>scrollAreaButtons</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>266</x>
+     <y>847</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>1023</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rightbottom</sender>
+   <signal>clicked()</signal>
+   <receiver>scrollAreaFileButtons</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1381</x>
+     <y>865</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>126</x>
+     <y>1052</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileTelemetricShowButton</sender>
+   <signal>clicked()</signal>
+   <receiver>scrollAreaFileButtons</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>193</x>
+     <y>857</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>120</x>
+     <y>1033</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricTrajectoryButton</sender>
+   <signal>clicked()</signal>
+   <receiver>telemetricBigTrajectory</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1422</x>
+     <y>233</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1422</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileShowTrajectoryButton</sender>
+   <signal>clicked()</signal>
+   <receiver>fileBigTrajectory</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1528</x>
+     <y>281</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1688</x>
+     <y>148</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileShowTrajectoryButton</sender>
+   <signal>clicked()</signal>
+   <receiver>scrollAreaFileButtons</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1410</x>
+     <y>374</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>136</x>
+     <y>1019</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricShowButton</sender>
+   <signal>clicked()</signal>
+   <receiver>telemetricBigTrajectory</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>555</x>
+     <y>607</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1383</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricShowPhoto</sender>
+   <signal>clicked()</signal>
+   <receiver>telemetricBigTrajectory</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1344</x>
+     <y>575</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1402</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricGraphButton</sender>
+   <signal>clicked()</signal>
+   <receiver>scrollAreaButtons</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>404</x>
+     <y>481</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>360</x>
+     <y>1038</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricGraphButton</sender>
+   <signal>clicked()</signal>
+   <receiver>telemetricBigPhoto</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>275</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>960</x>
+     <y>630</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricGraphButton</sender>
+   <signal>clicked()</signal>
+   <receiver>telemetricBigTrajectory</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>427</x>
+     <y>286</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1366</x>
+     <y>182</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricShowPhoto</sender>
+   <signal>clicked()</signal>
+   <receiver>bigMinTrajectory</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1346</x>
+     <y>711</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1302</x>
+     <y>575</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricShowPhoto</sender>
+   <signal>clicked()</signal>
+   <receiver>bigMaxTrajectory</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1352</x>
+     <y>661</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1296</x>
+     <y>536</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricShowButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bigMinTrajectory</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>546</x>
+     <y>644</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1313</x>
+     <y>564</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricGraphButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bigMaxTrajectory</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>481</x>
+     <y>449</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1306</x>
+     <y>534</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricGraphButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bigMinTrajectory</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>480</x>
+     <y>444</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1305</x>
+     <y>571</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricShowButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bigMaxTrajectory</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>582</x>
+     <y>598</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1312</x>
+     <y>529</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileShowTrajectoryButton</sender>
+   <signal>clicked()</signal>
+   <receiver>scrollAreaFileButtons</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1353</x>
+     <y>497</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>1022</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileShowGraphButton</sender>
+   <signal>clicked()</signal>
+   <receiver>fileBigTrajectory</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>461</x>
+     <y>264</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1704</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rightbottom</sender>
+   <signal>clicked()</signal>
+   <receiver>bigMinTrajectoryFile</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1355</x>
+     <y>632</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1308</x>
+     <y>573</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rightbottom</sender>
+   <signal>clicked()</signal>
+   <receiver>fileBigTrajectory</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1372</x>
+     <y>597</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1673</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileTelemetricShowButton</sender>
+   <signal>clicked()</signal>
+   <receiver>fileBigTrajectory</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>556</x>
+     <y>714</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1673</x>
+     <y>154</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rightbottom</sender>
+   <signal>clicked()</signal>
+   <receiver>bigMaxTrajectoryFile</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1367</x>
+     <y>699</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1315</x>
+     <y>539</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileShowGraphButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bigMinTrajectoryFile</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>433</x>
+     <y>461</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1312</x>
+     <y>571</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileShowGraphButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bigMaxTrajectoryFile</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>468</x>
+     <y>379</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1305</x>
+     <y>538</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileTelemetricShowButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bigMinTrajectoryFile</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>515</x>
+     <y>620</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1299</x>
+     <y>563</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileTelemetricShowButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bigMaxTrajectoryFile</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>554</x>
+     <y>644</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1314</x>
+     <y>527</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricShowButton</sender>
+   <signal>clicked()</signal>
+   <receiver>graphWidgetArea</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>525</x>
+     <y>614</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1460</x>
+     <y>53</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricGraphButton</sender>
+   <signal>clicked()</signal>
+   <receiver>graphWidgetArea</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>474</x>
+     <y>379</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1460</x>
+     <y>46</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricTrajectoryButton</sender>
+   <signal>clicked()</signal>
+   <receiver>graphWidgetArea</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1349</x>
+     <y>270</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1423</x>
+     <y>34</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricShowPhoto</sender>
+   <signal>clicked()</signal>
+   <receiver>graphWidgetArea</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1387</x>
+     <y>578</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1439</x>
+     <y>51</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileShowTrajectoryButton</sender>
+   <signal>clicked()</signal>
+   <receiver>graphFileWidgetArea</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1611</x>
+     <y>265</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1581</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rightbottom</sender>
+   <signal>clicked()</signal>
+   <receiver>graphFileWidgetArea</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1385</x>
+     <y>790</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1542</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileShowGraphButton</sender>
+   <signal>clicked()</signal>
+   <receiver>graphFileWidgetArea</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>344</x>
+     <y>271</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1550</x>
+     <y>64</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileTelemetricShowButton</sender>
+   <signal>clicked()</signal>
+   <receiver>graphFileWidgetArea</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>509</x>
+     <y>587</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1545</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rightbottom</sender>
+   <signal>clicked()</signal>
+   <receiver>fileBigVideo</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1362</x>
+     <y>831</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1542</x>
+     <y>954</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileTelemetricShowButton</sender>
+   <signal>clicked()</signal>
+   <receiver>fileBigVideo</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>499</x>
+     <y>757</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1530</x>
+     <y>931</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileShowTrajectoryButton</sender>
+   <signal>clicked()</signal>
+   <receiver>fileBigVideo</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1441</x>
+     <y>518</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1568</x>
+     <y>986</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileShowGraphButton</sender>
+   <signal>clicked()</signal>
+   <receiver>fileBigVideo</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>478</x>
+     <y>465</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1554</x>
+     <y>921</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricShowPhoto</sender>
+   <signal>clicked()</signal>
+   <receiver>graphClearButton</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1218</x>
+     <y>916</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1718</x>
+     <y>536</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricTrajectoryButton</sender>
+   <signal>clicked()</signal>
+   <receiver>graphClearButton</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1077</x>
+     <y>915</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1717</x>
+     <y>559</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricShowButton</sender>
+   <signal>clicked()</signal>
+   <receiver>graphClearButton</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>918</x>
+     <y>916</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1710</x>
+     <y>549</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>plusButton</sender>
+   <signal>clicked()</signal>
+   <receiver>telemetricGraphInfo</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>576</x>
+     <y>541</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>546</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>minusButton</sender>
+   <signal>clicked()</signal>
+   <receiver>telemetricGraphInfo</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>551</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>531</x>
+     <y>243</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fileShowGraphButton</sender>
+   <signal>clicked()</signal>
+   <receiver>fileBigGraph</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>645</x>
+     <y>908</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>539</x>
+     <y>183</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telemetricShowPhoto</sender>
+   <signal>clicked()</signal>
+   <receiver>telemetricBigPhoto</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1450</x>
+     <y>796</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1246</x>
+     <y>808</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>

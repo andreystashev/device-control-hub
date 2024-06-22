@@ -39,5 +39,13 @@ Device Control Hub is versatile software for managing and monitoring devices. It
 2. **Удаленное наблюдение**: Настройка удаленных камер и получение изображений по запросу для усиления мониторинга безопасности.
 3. **Мониторинг состояния системы**: Непрерывное отслеживание показателей производительности нескольких систем для обеспечения бесперебойной работы и быстрого решения любых проблем.
 
+<img width="1071" alt="Screenshot 2024-06-22 at 6 14 45 PM" src="https://github.com/andreystashev/device-control-hub/assets/70208784/8bb6d534-e4c2-42ba-ad30-3b286721e88b">
+
+<img width="1072" alt="Screenshot 2024-06-22 at 6 30 27 PM" src="https://github.com/andreystashev/device-control-hub/assets/70208784/8e7cb9e7-eb5a-4ff4-86af-ba39b2f79ed0">
+
+<img width="1079" alt="Screenshot 2024-06-22 at 9 04 42 PM" src="https://github.com/andreystashev/device-control-hub/assets/70208784/7aa016d3-96a0-42c9-9516-ea0c7e4b9da3">
+
+<img width="1076" alt="Screenshot 2024-06-22 at 10 14 57 AM" src="https://github.com/andreystashev/device-control-hub/assets/70208784/0acd8aae-629d-4862-960d-b23349f0eb92">
+
 
 

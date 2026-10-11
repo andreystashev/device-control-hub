@@ -1,51 +1,95 @@
-# device-control-hub
-Device Control Hub is versatile software for managing and monitoring devices. It supports commands, telemetry, file transfers, and image transmission. It offers route plotting, device tracking, and data analysis, ideal for drones and remote monitoring.
+# Device Control Hub
 
-# Панель управления устройствами
+A **C++/Qt desktop prototype** for receiving device telemetry, plotting measurements, showing positions on a map, and reviewing recorded data and images. It brings network and serial communication into one control panel.
 
-## Обзор
-Это универсальное программное обеспечение, предназначенное для управления и мониторинга различных устройств. Оно поддерживает обмен командами, телеметрией, файлами и изображениями. Программа использует несколько протоколов связи, включая TCP, UDP, UART и SSH. Она интегрируется с OpenStreetMap, используя шаблоны QT SleepyMaps для построения маршрутов и отслеживания устройств на картах.
+The application uses custom binary packet layouts and device-specific commands. It is an integration project rather than a generic device-management product.
 
-## Основные возможности
-1. **Обмен командами**: Бесшовная отправка и получение команд между устройствами.
-2. **Телеметрия**: Мониторинг телеметрии устройств в реальном времени.
-3. **Передача файлов**: Безопасная передача файлов между устройствами.
-4. **Передача изображений**: Отправка и получение изображений с удаленных камер.
-5. **Работа с картой**: Отслеживание устройств с использованием OpenStreetMap.
-6. **Обработка и анализ данных**: Анализ полученных данных, построение графиков и просмотр изображений в хронологическом порядке с помощью встроенного плеера.
+## Preview
 
-## Применение
-1. **Отслеживание нескольких устройств**: Отслеживание нескольких объектов на карте, которые отправляют координаты.
-2. **Удаленная съемка камер**: Получение изображений с удаленных камер по команде.
-3. **Мониторинг систем**: Мониторинг работы нескольких систем в реальном времени.
-4. **Управление парком беспилотников**: Отслеживание и управление местоположением и состоянием нескольких беспилотников, таких как дроны-доставщики, с доступом к живым изображениям в случае чрезвычайных ситуаций.
+<img width="1071" alt="Device Control Hub desktop interface" src="https://github.com/andreystashev/device-control-hub/assets/70208784/8bb6d534-e4c2-42ba-ad30-3b286721e88b" />
 
-## Подробные функциональные возможности
-1. **Протоколы связи**:
-   - **TCP/UDP**: Надежная и быстрая передача данных.
-   - **UART**: Последовательная связь для прямого интерфейса с оборудованием.
-   - **SSH**: Безопасное удаленное выполнение команд.
+<details>
+<summary>More screenshots</summary>
 
-2. **Картография и навигация**:
-   - **Интеграция с OpenStreetMap**: Использование данных открытых карт для визуализации местоположения устройств и построения маршрутов. В основе реализации шаблон QT SlippyMaps.
+<img width="1072" alt="Device Control Hub interface view" src="https://github.com/andreystashev/device-control-hub/assets/70208784/8e7cb9e7-eb5a-4ff4-86af-ba39b2f79ed0" />
 
-3. **Обработка данных**:
-   - **Построение графиков**: Визуализация телеметрических данных с помощью интерактивных графиков. Используется QCustomPlot.
-   - **Просмотр изображений**: Хронологический просмотр изображений с встроенным плеером.
+<img width="1079" alt="Device Control Hub interface view" src="https://github.com/andreystashev/device-control-hub/assets/70208784/7aa016d3-96a0-42c9-9516-ea0c7e4b9da3" />
 
+<img width="1076" alt="Device Control Hub interface view" src="https://github.com/andreystashev/device-control-hub/assets/70208784/0acd8aae-629d-4862-960d-b23349f0eb92" />
 
-## Примеры сценариев
-1. **Отслеживание доставки дронов**: Мониторинг и управление парком дронов-доставщиков, построение их маршрутов и обеспечение своевременной доставки с обновлениями в реальном времени.
-2. **Удаленное наблюдение**: Настройка удаленных камер и получение изображений по запросу для усиления мониторинга безопасности.
-3. **Мониторинг состояния системы**: Непрерывное отслеживание показателей производительности нескольких систем для обеспечения бесперебойной работы и быстрого решения любых проблем.
+</details>
 
-<img width="1071" alt="Screenshot 2024-06-22 at 6 14 45 PM" src="https://github.com/andreystashev/device-control-hub/assets/70208784/8bb6d534-e4c2-42ba-ad30-3b286721e88b">
+## Features
 
-<img width="1072" alt="Screenshot 2024-06-22 at 6 30 27 PM" src="https://github.com/andreystashev/device-control-hub/assets/70208784/8e7cb9e7-eb5a-4ff4-86af-ba39b2f79ed0">
+- TCP and UDP telemetry paths and a Qt Serial Port terminal.
+- Device selection and command controls.
+- Live and recorded telemetry plots using bundled QCustomPlot.
+- Map views and device trajectories built on Qt's Slippy Maps example.
+- Local telemetry recording and subsequent review.
+- Image reception and chronological playback of saved images.
 
-<img width="1079" alt="Screenshot 2024-06-22 at 9 04 42 PM" src="https://github.com/andreystashev/device-control-hub/assets/70208784/7aa016d3-96a0-42c9-9516-ea0c7e4b9da3">
+The repository contains no implemented SSH client. Network transport should not be interpreted as encrypted or authenticated.
 
-<img width="1076" alt="Screenshot 2024-06-22 at 10 14 57 AM" src="https://github.com/andreystashev/device-control-hub/assets/70208784/0acd8aae-629d-4862-960d-b23349f0eb92">
+## Build
+
+Use a **Qt 5 desktop kit**, a C++11-capable compiler, and qmake. The project declares these Qt modules:
+
+`Core`, `Gui`, `Widgets`, `Network`, `SerialPort`, `OpenGL`, `Xml`, and `PrintSupport`.
+
+Qt 6 compatibility has not been established. Qt Creator is the simplest way to configure the compiler and module paths:
+
+1. Clone the repository.
+2. Open [controlpanel.pro](controlpanel.pro) in Qt Creator.
+3. Select a Qt 5 desktop kit with the required modules.
+4. Build and run the application.
+
+With the selected Qt kit's `qmake` and compiler tools in your PATH, a command-line build on macOS/Linux follows the same project definition:
+
+```bash
+git clone https://github.com/andreystashev/device-control-hub.git
+cd device-control-hub
+mkdir -p build
+cd build
+qmake ../controlpanel.pro
+make -j2
+```
+
+This repository does not provide prebuilt releases or an automated build matrix. A clean build with a current Qt 5 kit still needs verification.
+
+## Device integration
+
+To connect a real device or a simulator, inspect these files before sending data:
+
+| File | Purpose |
+| --- | --- |
+| [messages.h](messages.h) | Packed packet structures, telemetry labels, and device count |
+| [networkcreator.cpp](networkcreator.cpp) | TCP/UDP connections and incoming-data handlers |
+| [guicreator.cpp](guicreator.cpp) | GUI wiring, command handlers, and telemetry servers |
+| [terminalCreator.cpp](terminalCreator.cpp) | Serial-port communication |
+| [terminalSettings.cpp](terminalSettings.cpp) | Port selection and serial configuration |
+
+The current configuration has three device slots. The GUI telemetry servers use TCP ports `18002`, `18004`, and `18006`; other network paths have their own hardcoded endpoints. These are code-level defaults, not a configurable discovery service. Match the packet layout, endpoint, and command format to your device.
+
+The application opens full-screen. Recordings and images use relative paths under `flights/`, and other file operations use `files/`. Set the working directory deliberately when running from Qt Creator. A compatible device or simulator is required for live data; none is bundled here.
+
+## Project layout
+
+| Component | Responsibility |
+| --- | --- |
+| `guicreator.*`, `guicreator.ui` | Main desktop interface |
+| `networkcreator.*` | Network communication |
+| `terminalCreator.*`, `terminalSettings.*`, `terminalConsole.*` | Serial terminal |
+| `graphcreator.*`, `qcustomplot.*` | Telemetry charts |
+| `mapcreator.*`, `mapzoom.*`, `maplight.*` | Map rendering and interaction |
+| `filecreator.*`, `playercreator.*` | Recording and playback |
+| `messages.h` | Packet definitions |
+| `pics/`, `resources.qrc` | Bundled interface assets |
+
+## Project status
+
+This prototype demonstrates Qt GUI composition and device-data integration. The next engineering steps are a verified clean build, configurable endpoints, a packet simulator, and automated protocol tests. It has no automated test suite, and its behavior with arbitrary or malformed device traffic has not been validated.
+
+Bundled QCustomPlot 2.0.0 retains its original copyright and GPL notices in `qcustomplot.h` and `qcustomplot.cpp`. No separate project-wide `LICENSE` file is present.
 
 
 
